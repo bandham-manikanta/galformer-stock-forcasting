@@ -756,9 +756,11 @@ st.sidebar.header("Configure Analysis")
 # Ticker selection
 all_tickers = list(ticker_to_company_name.keys())
 
-selected_tickers = st.sidebar.multiselect(
-    "Select Tickers", options=all_tickers, default=["TSLA"]
+selected_tickers = st.sidebar.selectbox(
+    "Select Company", options=all_tickers, index=all_tickers.index("TSLA")
 )
+
+selected_tickers = [selected_tickers,]
 
 # Number of articles
 max_articles = st.sidebar.slider(
