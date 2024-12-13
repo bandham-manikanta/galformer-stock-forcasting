@@ -1,4 +1,4 @@
-## Transformer based Stock Price Prediction and Portfolio Recommendation System
+## Transformer based Stock Price forecasting and Portfolio Recommendation System
 
 ### Project Structure
 
